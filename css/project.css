@@ -1,0 +1,171 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container .buy-now p{
+    float: left;
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px ;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* here */
+.item img {
+    margin-right: 15px;
+    width: 226px;
+    height: 295px;
+    border:solid gray;
+    border-radius: 2px;
+
+}
+.owl-carousel
+{
+    margin-top: 20px;
+    
+}
+
+.rating{
+    text-align: center;
+}
+
+.second-part h2{
+    height: 100px;
+    width: 300px;
+    margin:20px;
+    padding : 20px;
+    border: solid gray;
+    border-radius: 4px;
+}
+.banner-img {
+
+    /*margin-left: auto;
+    margin-right: auto;
+    */text-align: right;
+   margin-right: 20px;
+ 
+} 
+.banner-img img
+{
+    margin-bottom: 60px;
+   
+}
+.deal-img 
+{
+    text-align: center;
+  
+}
+.deal-img img 
+{
+    margin-bottom: 50px;
+  
+}
+.women-deal
+{
+    background:radial-gradient(#915023,#fff);
+    
+}
+#purse .banner-img img{
+    border-radius: 8px;
+    text-align: right;
+}
+
+.third-part
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.container-2
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+#trend{
+    height: 100px;
+    width: 300px;
+    margin:20px;
+    padding : 20px;
+    border: solid gray;
+    border-radius: 4px;
+}
+/*.second-part
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+*/
+.headphone{
+    background:radial-gradient(#1bffec,#fff);
+    margin-bottom: 20px;
+}
+.headphone h2{
+    height: 100px;
+    width: 300px;
+    margin:20px;
+    padding : 20px;
+    border: solid gray;
+    border-radius: 4px;
+}
+.forth-part{
+    background:radial-gradient(#ec8744,#fff);
+}
+#bag-offer
+{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.band-part
+    {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+    .fifth-part{
+        background:radial-gradient(#c09bdf,#fff);
+    }
+    .sixth-part{
+        background:radial-gradient(#f77133,rgba(255, 255, 255, 0.397));
+    }
+    #mask
+    {
+        height: 100px;
+        width: 400px;
+        margin:20px;
+        padding : 20px;
+        border: solid gray;
+        border-radius: 4px;
+    }
+    #mask-banner img{
+        border-radius: 4px;
+    }
+    
+.CU{
+
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    color: white;
+    padding: 50px;
+    
+}
+.products a { 
+    text-decoration: none;
+    color: black;
+}
+footer{
+    font-family: cursive;
+    color: seagreen;
+    background-color: black;
+}

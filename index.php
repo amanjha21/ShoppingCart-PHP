@@ -1,0 +1,739 @@
+<?php
+
+session_start();
+
+require_once ('php/CreateDb.php');
+require_once ('./php/component.php');
+
+
+// create instance of Createdb class
+$database = new CreateDb("Productdb", "Producttb");
+
+if (isset($_POST['add'])){
+    if(isset($_SESSION['cart'])){
+
+        $item_array_id = array_column($_SESSION['cart'], "product_id");
+
+        if(in_array($_POST['product_id'], $item_array_id)){
+            echo "<script>alert('Product is already added in the cart..!')</script>";
+            echo "<script>window.location = 'index.php'</script>";
+        }else{
+
+            $count = count($_SESSION['cart']);
+            $item_array = array(
+                'product_id' => $_POST['product_id']
+            );
+
+            $_SESSION['cart'][$count] = $item_array;
+        }
+
+    }else{
+
+        $item_array = array(
+                'product_id' => $_POST['product_id']
+        );
+
+        // Create new session variable
+        $_SESSION['cart'][0] = $item_array;
+        // print_r($_SESSION['cart']);
+    }
+}
+if(isset($_SESSION['greet'])){
+if($_SESSION['greet']){
+    echo'<script>alert("Logged in Successfully.")</script>';
+    $_SESSION['greet']=false;
+}
+}
+
+?>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Store</title>
+     
+        <!-- CSS only -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.green.css">
+       
+        <link rel="stylesheet" href="css/project.css">
+        <link rel="stylesheet" href="css/header.css">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+    
+    </head>
+
+    <body>
+    <?php require_once ("php/header.php"); ?>
+        
+       
+<div class="header">
+   
+    <div class="container">
+        
+        <div class="owl-carousel owl-theme">
+            <div class="buy-now"><p>Life is hard enough already. <br>Let us make it a little easier.
+             <a href="#" class="btn">Buy Now &#10140;</a></p></div>
+            <div class="item"><a href="project.html"><img src="image\paintings.jpeg"></a></div>
+            <div class="item"><a href="project.html"><img src="image\img-9.jpg"></a></div>
+            <div class="item"><a href="project.html"><img src="image\img-2.jpg" ></a></div>
+            <div class="item"><a href="project.html"><img src="image\img-7.jpeg" ></a></div>
+            <div class="item"><a href="project.html"><img src="image\img-6.jpg" ></a></div>
+            <div class="item"><a href="project.html"><img src="image\img-3.jpeg" ></a></div>
+            <div class="item"><a href="project.html"><img src="image\img-8.jpg"></a></div>
+            <div class="item"><a href="project.html"><img src="image\product-4.jpg" ></a></div>
+            <div class="item"><a href="project.html"><img src="image\electronic-9.jpeg" ></a></div>
+            <div class="item"><a href="project.html"><img src="image\towels.jpeg" ></a></div>
+            <div class="item"><a href="project.html"><img src="image\wall clock.jpeg" ></a></div>
+            <div class="item"><a href="project.html"><img src="image\product-8.jpg" ></a></div>
+        </div>
+</div>
+
+</div>
+</div>
+  <br>
+  <br>
+<!--Deals-->
+
+<div class="headphone">
+    <h2>Deal Of The Day</h2>
+
+    <div class="second-part">
+      
+        <br>
+        <br>
+        <div class=deal-img id="deal-img">
+           <img src="image/banner-1.jpg" height="500px" width="auto"> 
+        </div>
+        </div>
+        
+
+
+</div>
+
+
+
+
+<h2 id="trend">Trending Offers</h2>
+
+<div class="container-2">
+
+
+
+
+
+<div class="products" id="brands1"> <a href="men-section.html" target="_blank"> <img src="image/product-1.jpg" height="300px" width="auto"></a>
+    <a href="men-section.html" target="_blank"><h4>Red printed T-shirt</h4></a>
+<p>Rs.699</p>
+<div class="rating">
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+</div>
+
+</div>
+<div class="products" id="brands2"> <a href="men-section.html" target="_blank"> <img src="image/product-2.jpg" height="300px" width="auto"></a>
+
+    <a target="_blank" href="men-section.html"><h4>Gold-Star Shoes</h4></a>
+    
+    <p>Rs.1699</p>
+    <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+    </div>
+    
+
+</div>
+<div class="products" id="brands3"> <a href="men-section.html" target="_blank"><img src="image/product-3.jpg" height="300px" width="auto"></a>
+
+    <a href="men-section.html" target="_blank"> <h4>Roadster Track Pant</h4></a>
+    <p>Rs.969</p>
+    <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        
+    </div>
+
+</div>
+<div class="products" id="brands4"> <a href="men-section.html" target="_blank"><img src="image/product-8.jpg" height="300px" width="auto"></a>
+
+    <a href="men-section.html" target="_blank"><h4>Fastrack Wrist Watch</h4></a>
+    <p>Rs.3699</p>
+    <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+    </div>
+
+</div>
+<div class="products" id="brands5"> <a href="men-section.html" target="_blank"><img src="image/product-7.jpg" height="300px" width="auto"></a>
+
+    <a href="men-section.html" target="_blank"><h4>HR-X Socks</h4></a>
+    <p>Rs.199</p>
+    <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+
+</div>
+<div class="products" id="brands6"> <a href="men-section.html" target="_blank"><img src="image/product-6.jpg" height="300px" width="auto"></a>
+
+    <a href="men-section.html" target="_blank"><h4>Black printed T-shirt</h4></a>
+    <p>Rs.999</p>
+    <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+    </div>
+
+</div>
+
+</div>
+</div>
+ <!--main div-->
+
+<!--for women-->
+
+<div class="women">
+
+    <div class="women-deal">
+
+        <h2 id="trend" >Deal For Women</h2>
+        <div class="third-part" id="purse">
+           
+            <br>
+            <br>
+            <div class="women-offer">
+                <p id="bag-offer">
+                    <i><e>Exclusive offers are available <br> on women hand bags.<br>
+                    Please check out <br> our women's product section <br> and take the benefit <br> of offers available.
+                </e></i>
+                </p>
+                <h4>  <a href="#" class="btn">Check Out &#10140;</a></h4>
+            </div>
+            <div class=banner-img>
+                <img src="image/deal-women.jpg" height="500px" width="auto">
+            </div>
+            </div>
+
+
+    </div>
+    
+        
+        
+        
+        <h2 id="trend">Trending Offers</h2>
+        
+        <div class="container-2">
+        
+        
+        
+        
+        
+        <div class="products" id="brands1"> <a href="women-section.html" target="_blank">   <img src="image/women-1.jpg" height="300px" width="auto"></a>
+            <a href="women-section.html" target="_blank"> <h4>No-Heels-Sandals</h4></a>
+        <p>Rs.1599</p>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        
+        </div>
+        <div class="products" id="brands2"> <a href="women-section.html" target="_blank"> <img src="image/women-2.png" height="300px" width="230px"></a>
+        
+            <a href="women-section.html" target="_blank"> <h4>Pashmina Scarf</h4></a>
+            <p>Rs.299</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands3"> <a href="women-section.html" target="_blank"> <img src="image/women-3.Jpeg" height="300px" width="230px"></a>
+        
+            <a href="women-section.html" target="_blank"> <h4>Rebals Tales Bag</h4></a>
+            <p>Rs.1969</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                
+            </div>
+        
+        </div>
+        <a href="women-section.html" target="_blank"> <div class="products" id="brands4"> <img src="image/women-4.jpeg" height="300px" width="230px"></a>
+        
+            <a href="women-section.html" target="_blank"> <h4>Pink shirt for women</h4></a>
+            <p>Rs.999</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands5"> <a href="women-section.html" target="_blank"> <img src="image/women-5.jpg" height="300px" width="230px"></a>
+        
+            <a href="women-section.html" target="_blank"> <h4>Pull-Over Sweater</h4></a>
+            <p>Rs.499</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands6"> <a href="women-section.html" target="_blank"> <img src="image/women-6.jpg" height="300px" width="230px"></a>
+        
+            <a href="women-section.html" target="_blank"> <h4>Daisy Track Pant</h4></a>
+            <p>Rs.999</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        
+        </div>
+        </div>
+
+</div>
+
+<!--for men-->
+<div class="men">
+
+    <div class="forth-part" id="band">
+        <h2 id="trend">Deal For Men</h2> 
+        <br>
+        <br>
+       <div class="band-part">
+           <div class="band-text">
+
+          
+      <p id="bag-offer">
+        <i><e>Exclusive offers are available <br> on women hand bags.<br>
+            Please check out <br> our women's product section <br> and take the benefit <br> of offers available.
+        </e></i>
+      </p>
+      <h4>  <a href="#" class="btn">Check Out &#10140;</a></h4>
+    </div>
+        <div class=banner-img>
+           <img src="image/exclusive.png" height="500px" width="auto"> 
+        </div>
+        </div>
+
+       </div>    
+        
+        <h2 id="trend">Trending Offers</h2>
+        
+        <div class="container-2">
+        
+        
+        
+        
+        
+        <div class="products" id="brands1"> <a href="men-section.html" target="_blank"> <img src="image/men-1.jpg" height="300px" width="230"></a>
+            <a href="men-section.html" target="_blank"><h4>Men's Formal Shirt</h4></a>
+        <p>Rs.1699</p>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        
+        </div>
+        <div class="products" id="brands2">  <a href="men-section.html" target="_blank"><img src="image/men-2.jpg" height="300px" width="230px"></a>
+        
+            <a href="men-section.html" target="_blank"><h4>Philips Trimmer</h4></a>
+            <p>Rs.1459</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands3">  <a href="men-section.html" target="_blank"><img src="image/men-3.jpg" height="300px" width="230px"></a>
+        
+            <a href="men-section.html" target="_blank"><h4>Fogg Perfume</h4></a>
+            <p>Rs.1269</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                
+            </div>
+        
+        </div>
+        <div class="products" id="brands4">  <a href="men-section.html" target="_blank"><img src="image/men-4.jpeg" height="300px" width="230px"></a>
+        
+            <a href="men-section.html" target="_blank"><h4>Sleeveless Vest</h4></a>
+            <p>Rs.299</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands5"> <a href="men-section.html" target="_blank"> <img src="image/men-5.jpg" height="300px" width="230px"></a>
+        
+            <a href="men-section.html" target="_blank"><h4>Rakuten Jersey</h4></a>
+            <p>Rs.1999</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands6">  <a href="men-section.html" target="_blank"><img src="image/men-6.jpg" height="300px" width="230px"></a>
+        
+            <a href="men-section.html" target="_blank"> <h4>Wallet and Belt Combo</h4></a>
+            <p>Rs.1299</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        
+        </div>
+        </div>
+
+</div>
+
+<!--kids-->
+
+<div class="kid">
+
+    <div class="fifth-part" id="band">
+        <h2 id="trend">Kids Collection</h2> 
+        <br>
+        <br>
+       <div class="band-part">
+           <div class="band-text">
+
+          
+      <p id="bag-offer">
+        <i><e>Exclusive offers are available <br> on women hand bags.<br>
+            Please check out <br> our women's product section <br> and take the benefit <br> of offers available.
+        </e></i>
+      </p>
+      <h4>  <a href="#" class="btn">Check Out &#10140;</a></h4>
+    </div>
+        <div class=banner-img>
+           <img src="image/kids-banner.jpg" height="500px" width="auto"> 
+        </div>
+        </div>
+
+       </div>    
+        
+        <h2 id="trend">Trending Offers</h2>
+        
+        <div class="container-2">
+        
+        
+        
+        
+        
+        <div class="products" id="brands1"><a href="kids-section.html" target="_blank"> <img src="image/kids-1.jpg" height="300px" width="230"></a>
+            <a href="kids-section.html" target="_blank"> <h4>Minnie Mouse</h4></a>
+        <p>Rs.1099</p>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        
+        </div>
+        <div class="products" id="brands2"> <a href="kids-section.html" target="_blank"><img src="image/kids-2.jpg" height="300px" width="230px"></a>
+        
+            <a href="kids-section.html" target="_blank"> <h4>Multi-Guitar</h4></a>
+            <p>Rs.999</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands3"><a href="kids-section.html" target="_blank">  <img src="image/kids-3.jpg" height="300px" width="230px"></a>
+        
+            <a href="kids-section.html" target="_blank"> <h4>Disney-Blue-Pillow</h4></a>
+            <p>Rs.259</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                
+            </div>
+        
+        </div>
+        <div class="products" id="brands4"><a href="kids-section.html" target="_blank">  <img src="image/kids-4.jpg" height="300px" width="230px"></a>
+        
+            <a href="kids-section.html" target="_blank"> <h4>Twin-Face Bag</h4></a>
+            <p>Rs.2599</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands5"> <a href="kids-section.html" target="_blank"> <img src="image/kids-5.jpg" height="300px" width="230px"></a>
+        
+            <a href="kids-section.html" target="_blank"> <h4>Kitty Pink Shoes</h4></a>
+            <p>Rs.999</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands6"> <a href="kids-section.html" target="_blank"> <img src="image/kids-6.jpg" height="300px" width="230px"></a>
+        
+            <a href="kids-section.html" target="_blank"><h4>Adorable-Blue-Frock</h4></a>
+            <p>Rs.3299</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        
+        </div>
+        </div>
+
+</div>
+
+<!--lockdown-offers-->
+
+<div class="lockdown">
+
+    <div class="sixth-part" id="band">
+        <h2 id="mask">Stay Home & Stay Safe</h2> 
+        <br>
+        <br>
+       <div class="band-part">
+           <div class="band-text">
+
+          
+      <p id="bag-offer">
+        <i><e>Exclusive offers are available <br> on women hand bags.<br>
+            Please check out <br> our women's product section <br> and take the benefit <br> of offers available.
+        </e></i>
+      </p>
+      <h4>  <a href="#" class="btn">Check Out &#10140;</a></h4>
+    </div>
+        <div class=banner-img id="mask-banner">
+           <img src="image/lockdown-banner.jpg" height="500px" width="auto"> 
+        </div>
+        </div>
+
+       </div>    
+        
+        <h2 id="trend">Trending Offers</h2>
+        
+        <div class="container-2">
+        
+        
+        
+        
+        
+        <div class="products" id="brands1"><a href="electronics and other items.html" target="_blank"> <img src="image/lockdown-1.jpg" height="300px" width="230"></a>
+            <a href="electronics and other items.html" target="_blank"><h4>Wild-Craft Mask</h4></a>
+        <p>Rs.199</p>
+        <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        
+        </div>
+        <div class="products" id="brands2"> <a href="electronics and other items.html" target="_blank"><img src="image/lockdown-3.jpg" height="300px" width="230px"></a>
+        
+            <a href="electronics and other items.html" target="_blank"><h4>Face-Shield</h4></a>
+            <p>Rs.59</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands3"><a href="electronics and other items.html" target="_blank"> <img src="image/lockdown-4.jpg" height="300px" width="230px"></a>
+        
+            <a href="electronics and other items.html" target="_blank"><h4>Hand Sanitizer</h4></a>
+            <p>Rs.99</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                
+            </div>
+        
+        </div>
+        <div class="products" id="brands4"><a href="electronics and other items.html" target="_blank"><img src="image/lockdown-2.jpg" height="300px" width="230px"></a>
+        
+            <a href="electronics and other items.html" target="_blank"><h4>3-Mask-Combo</h4></a>
+            <p>Rs.499</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands5"> <a href="electronics and other items.html" target="_blank"><img src="image/lockdown-5.jpg" height="300px" width="230px"></a>
+        
+            <a href="electronics and other items.html" target="_blank"><h4>PPE Full Kit</h4></a>
+            <p>Rs.599</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        <div class="products" id="brands6"> <a href="electronics and other items.html" target="_blank"><img src="image/lockdown-6..jpg" height="300px" width="230px"></a>
+        
+            <a href="electronics and other items.html" target="_blank"><h4>Immunity-Boster</h4></a>
+            <p>Rs.899</p>
+            <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+        
+        </div>
+        
+        </div>
+        </div>
+
+</div>
+
+<!--footer-->
+
+<div class="footer">
+
+        <div class="CU">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>MY-KART</p>
+                
+            </div>
+            <div class="footer-col-2">
+               <a href="project.html"> <img src="image/logo.png" height="70px" width="auto"></a>
+                <p>In this pandemic period its very risky to go <br> outside for shopping at such a crowdy places so our website <br> will help people to do shopping online without any risk by just sitting <br> at one place from their home.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog</li>
+                    <li>Return Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                </ul>
+            </div>
+            
+        </div>
+ 
+</div>
+<footer class="presentor"><p><h2>Designed by:- Akshad Aayush and Komal</h2></p></footer>
+<script >
+    $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        margin : 10,
+        autoplay : 1000,
+        loop : true,
+        items : 4,
+        nav : true
+    });
+})
+</script>
+    </body>
+</html>

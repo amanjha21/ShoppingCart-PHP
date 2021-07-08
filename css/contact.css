@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #5bbdeb;
+  font-size: 28px;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.container {
+  width: 80%;
+  margin: 100px;
+  font-family: cursive;
+}
+.contact-box {
+  background: #045491;
+  display: flex;
+  font-size: 26px;
+}
+.contact-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+  color: black;
+}
+.contact-right {
+  flex-basis: 40%;
+  padding: 40px;
+  background: #032540;
+  color: white;
+}
+h1 {
+  margin-bottom: 10px;
+}
+.container p {
+  margin-bottom: 40px;
+}
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input-row .input-group {
+  flex-basis: 45%;
+}
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+  padding: 5px;
+}
+textarea {
+  width: 100%;
+  border: 2px solid;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+label {
+  margin-bottom: 6px;
+  display: block;
+  color: #09eb4d;
+}
+.send-button {
+  background: black;
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+.contact-left h3 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.contact-right h3 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+tr td:first-child {
+  padding-right: 20px;
+}
+tr td:first-child {
+  padding-top: 40px;
+}

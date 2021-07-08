@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: radial-gradient(#e2b553, white);
+}
+
+.header {
+  background-color: blue;
+  height: 120px;
+  margin: 10px;
+}
+
+.box {
+  height: 400px;
+  width: 300px;
+  background: white;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+.box span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  display: inline-block;
+  width: 100px;
+}
+.btn {
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 530px;
+}
+.form-btn {
+  display: inline-block;
+}
+.box form {
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 1s;
+}
+.box {
+  margin-top: 15%;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+form.btn:focus {
+  outline: none;
+}
+#LoginForm {
+  left: 0px;
+}
+#RegForm {
+  left: 300px;
+  width: 400px;
+}
+#Indicator {
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(0px);
+  transition: transform 1s;
+}
+form a {
+  font-size: 12px;
+  text-decoration: none;
+}
