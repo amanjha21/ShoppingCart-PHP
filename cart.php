@@ -12,7 +12,7 @@ if (isset($_POST['remove'])){
       foreach ($_SESSION['cart'] as $key => $value){
           if($value["product_id"] == $_GET['id']){
               unset($_SESSION['cart'][$key]);
-              echo "<script>alert('Product has been Removed...!')</script>";
+              echo "<script>alert('Product has been Removed...!');</script>";
               echo "<script>window.location = 'cart.php'</script>";
           }
       }
@@ -35,30 +35,26 @@ if (isset($_POST['remove'])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
 
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
 </head>
 <body class="bg-light">
-
-<?php
+    
+    <?php
     require_once ('php/header.php');
-?>
+    ?>
 
 <div class="container-fluid">
     <div class="row px-5">
         <div class="col-md-7">
             <div class="shopping-cart">
-                <h6>My Cart</h6>
-                <hr>
-
+                <div class="heading-section"><h1>My Cart</h1></div>
                 <?php
-
                 $total = 0;
-                    if (isset($_SESSION['cart'])){
+                    if (isset($_SESSION['cart'])&& (count($_SESSION['cart'])>0)){
                         $product_id = array_column($_SESSION['cart'], 'product_id');
-
                         $result = $db->getData();
                         while ($row = mysqli_fetch_assoc($result)){
                             foreach ($product_id as $id){
@@ -69,37 +65,28 @@ if (isset($_POST['remove'])){
                             }
                         }
                     }else{
-                        echo "<h5>Cart is Empty</h5>";
+                        echo "<div class='no-results'><h2><b>Oops! Cart is Empty...</b></h2>
+                        <h4>Return to <a href='index.php'>Homepage</a></h4></div>";
                     }
-
-                ?>
-
+                     ?>
             </div>
         </div>
-        <div class="col-md-4 offset-md-1 border rounded mt-5 bg-white h-25">
-
-            <div class="pt-4">
-                <h6>PRICE DETAILS</h6>
-                <hr>
-                <div class="row price-details">
-                    <div class="col-md-6">
+        <div class="col-md-4 ">
+            <div class=" price-container">
+                <h5>PRICE DETAILS</h5>               
+                <div class=" price-details">
+                    <div >
                         <?php
-                            if (isset($_SESSION['cart'])){
+                            if (isset($_SESSION['cart']) ){
                                 $count  = count($_SESSION['cart']);
-                                echo "<h6>Price ($count items)</h6>";
+                                echo "<h6>Price ($count items): Rs.$total</h6>";
                             }else{
-                                echo "<h6>Price (0 items)</h6>";
+                                echo "<h6>Price (0 items): Rs.0</h6>";
                             }
                         ?>
-                        <h6>Delivery Charges</h6>
-                        <hr>
-                        <h6>Amount Payable</h6>
-                    </div>
-                    <div class="col-md-6">
-                        <h6>$<?php echo $total; ?></h6>
-                        <h6 class="text-success">FREE</h6>
-                        <hr>
-                        <h6>$<?php
+                        <h6>Delivery Charges: <span class="text-success">FREE</span></h6>
+                        
+                        <h6>Amount Payable: Rs.<?php
                             echo $total;
                             ?></h6>
                     </div>
@@ -109,6 +96,7 @@ if (isset($_POST['remove'])){
         </div>
     </div>
 </div>
+<?php require_once ("php/footer.php"); ?>
 
 
 

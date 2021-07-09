@@ -52,11 +52,11 @@ if (isset($_POST['username']) && isset($_POST['password']) && !isset($_POST['ema
      
         <!-- CSS only -->
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="css/header.css">
+        <!-- <link rel="stylesheet" href="css/header.css"> -->
     </head>
 
     <body>
@@ -86,6 +86,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && !isset($_POST['ema
        
         </div>
     </div>
+    <?php require_once ("php/footer.php"); ?>
 
     <script>
         var LoginForm = document.getElementById("LoginForm");

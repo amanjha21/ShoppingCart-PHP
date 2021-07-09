@@ -21,28 +21,27 @@ $database = new CreateDb("Productdb", "Producttb");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
 
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
 </head>
 <body>
 
-
 <?php require_once ("php/header.php"); ?>
-<div class="heading"><h1>SEARCH RESULTS</h1></div>
-<div class="container">
-        <div class="row text-center py-5">
+<div class="heading-section"><h1>SEARCH RESULTS</h1></div>
+<div class="section-container">
+        
             <?php
                 $result = $database->getData($_REQUEST['query']);
                 if(!$result){
-                    echo("<h2>Oops! Nothing to Show</h2>");
+                    echo("<div class='no-results'><h2>Oops! Nothing to Show</h2><h4>Return to <a href='index.php'>Homepage</a></h4></div>");
                 }
                 else{
                 while ($row = mysqli_fetch_assoc($result)){
-                    // echo("./.$row[product_image]");
-                    component($row['product_name'], $row['product_price'], "$row[product_image]", $row['id']);
+                    component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
                 }}
             ?>
-        </div>
-</div> 
+        
+</div>
+<?php require_once ("php/footer.php"); ?>

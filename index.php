@@ -19,7 +19,7 @@ if (isset($_POST['add'])){
             echo "<script>window.location = 'index.php'</script>";
         }else{
 
-            $count = count($_SESSION['cart']);
+            $count = count($_SESSION['cart'])+1;
             $item_array = array(
                 'product_id' => $_POST['product_id']
             );
@@ -35,7 +35,7 @@ if (isset($_POST['add'])){
 
         // Create new session variable
         $_SESSION['cart'][0] = $item_array;
-        // print_r($_SESSION['cart']);
+        //  print_r($_SESSION['cart']);
     }
 }
 if(isset($_SESSION['greet'])){
@@ -57,13 +57,13 @@ if($_SESSION['greet']){
      
         <!-- CSS only -->
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.green.css">
        
         <link rel="stylesheet" href="css/project.css">
-        <link rel="stylesheet" href="css/header.css">
+
+
 
         <script src="js/jquery.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
@@ -72,6 +72,7 @@ if($_SESSION['greet']){
 
     <body>
     <?php require_once ("php/header.php"); ?>
+
         
        
 <div class="header">
@@ -690,43 +691,11 @@ if($_SESSION['greet']){
 </div>
 
 <!--footer-->
+<?php require_once ("php/footer.php"); ?>
 
-<div class="footer">
-
-        <div class="CU">
-            <div class="footer-col-1">
-                <h3>Download Our App</h3>
-                <p>MY-KART</p>
-                
-            </div>
-            <div class="footer-col-2">
-               <a href="project.html"> <img src="image/logo.png" height="70px" width="auto"></a>
-                <p>In this pandemic period its very risky to go <br> outside for shopping at such a crowdy places so our website <br> will help people to do shopping online without any risk by just sitting <br> at one place from their home.</p>
-            </div>
-            <div class="footer-col-3">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li>Coupons</li>
-                    <li>Blog</li>
-                    <li>Return Policy</li>
-                </ul>
-            </div>
-            <div class="footer-col-4">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li>Instagram</li>
-                    <li>Twitter</li>
-                    <li>Facebook</li>
-                </ul>
-            </div>
-            
-        </div>
- 
-</div>
-<footer class="presentor"><p><h2>Designed by:- Akshad Aayush and Komal</h2></p></footer>
 <script >
     $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel').css({
         margin : 10,
         autoplay : 1000,
         loop : true,
