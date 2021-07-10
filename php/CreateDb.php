@@ -9,15 +9,14 @@ class CreateDb
         public $dbname;
         public $tablename;
         public $con;
-
-
+ 
         // class constructor
     public function __construct(
-        $dbname = "Newdb",
+        $dbname = getenv('DB_NAME'),
         $tablename = "Productdb",
-        $servername = "localhost",
-        $username = "root",
-        $password = "password"
+        $servername = getenv('DB_SERVER'),
+        $username = getenv('DB_USER'),
+        $password = getenv('DB_PASSWORD')
     )
     {
       $this->dbname = $dbname;
