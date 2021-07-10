@@ -12,21 +12,18 @@ class CreateDb
  
         // class constructor
     public function __construct(
-        $dbname = getenv('DB_NAME'),
-        $tablename = "Productdb",
-        $servername = getenv('DB_SERVER'),
-        $username = getenv('DB_USER'),
-        $password = getenv('DB_PASSWORD')
+         $dbname, $tablename
     )
     {
-      $this->dbname = $dbname;
-      $this->tablename = $tablename;
-      $this->servername = $servername;
-      $this->username = $username;
-      $this->password = $password;
+      $this->dbname = getenv('DB_NAME');
+      $this->tablename = "Producttb";
+      $this->servername = getenv('DB_SERVER');
+      $this->username = getenv('DB_USER');
+      $this->password = getenv('DB_PASSWORD');
+    
 
       // create connection
-        $this->con = mysqli_connect($servername, $username, $password);
+        $this->con = mysqli_connect($this->servername, $this->username, $this->password);
 
         // Check connection
         if (!$this->con){
@@ -39,10 +36,10 @@ class CreateDb
         // execute query
         if(mysqli_query($this->con, $sql)){
 
-            $this->con = mysqli_connect($servername, $username, $password, $dbname);
+            $this->con = mysqli_connect($this->servername, $this->username, $this->password, $dbname);
 
             // sql to create new table for products
-            $sql1 = " CREATE TABLE IF NOT EXISTS $tablename
+            $sql1 = " CREATE TABLE IF NOT EXISTS producttb
                             (id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
                              product_name VARCHAR (25) NOT NULL,
                              product_price FLOAT,
@@ -92,23 +89,4 @@ class CreateDb
         }
     }
 
-    // get user from the database
-    // public function getUserData($username){
-    //     if($tag=='-1'){
-    //     $sql = "SELECT * FROM usertb WHERE ";
-    //     }else if($tag=='men'|| $tag=='women'|| $tag=='kids'||$tag=='other'){
-    //     $sql = "SELECT * FROM producttb WHERE product_tag='$tag'";
-    //     }else{
-    //      $sql = "SELECT * FROM producttb WHERE product_name LIKE '%$tag%'";
-    //     }
-
-    //     $result = mysqli_query($this->con, $sql);
-
-    //     if(mysqli_num_rows($result) > 0){
-    //         return $result;
-    //     }
-    //     else{
-    //         return false;
-    //     }
-    // }
 }
