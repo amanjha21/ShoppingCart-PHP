@@ -200,8 +200,8 @@
   .navbar-toggle {
     display: initial;
   }
-  .navbar-header button {
-    float: right;
+  .navbar-header {
+    float: none;
   }
 }
 @media (min-width: 900px) {
