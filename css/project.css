@@ -76,6 +76,7 @@ body {
   margin-top: 30px;
   justify-content: space-evenly;
   margin-bottom: 50px;
+  width: 100vw;
 }
 #trend {
   height: 100px;
