@@ -118,6 +118,8 @@ body {
 }
 .sixth-part {
   background: radial-gradient(#f77133, rgba(255, 255, 255, 0.397));
+  width: 100vw;
+  overflow: hidden;
 }
 #mask {
   height: 100px;
