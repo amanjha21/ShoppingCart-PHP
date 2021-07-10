@@ -200,7 +200,7 @@
   .navbar-toggle {
     display: initial;
   }
-  .navbar-header {
+  .navbar-header button {
     float: right;
   }
 }
