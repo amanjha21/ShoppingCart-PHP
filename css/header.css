@@ -194,29 +194,11 @@
   }
 }
 @media (min-width: 768px) {
-  .navbar-collapse.collapse {
-    display: none !important;
-  }
-  .navbar-toggle {
-    display: initial;
-  }
-  .navbar-header {
-    float: none;
-  }
-}
-@media (min-width: 1000px) {
   .big-logo-row h1 {
     font-size: 9em;
     padding-bottom: 30px;
   }
-  .navbar-toggle {
-    display: none;
-  }
-  .navbar-collapse.collapse {
-    display: block !important;
-  }
 }
-
 @media (min-width: 1200px) {
   .big-logo-row h1 {
     font-size: 12em;
