@@ -73,31 +73,6 @@ if($_SESSION['greet']){
     <?php require_once ("php/header.php"); ?>
 
         
-       
-<div class="header">
-   
-    <div class="container">
-        
-        <div class="owl-carousel owl-theme">
-            <div class="buy-now"><p>Life is hard enough already. <br>Let us make it a little easier.
-             <a href="#" class="btn">Buy Now &#10140;</a></p></div>
-            <div class="item"><a href="project.html"><img src="image\paintings.jpeg"></a></div>
-            <div class="item"><a href="project.html"><img src="image\img-9.jpg"></a></div>
-            <div class="item"><a href="project.html"><img src="image\img-2.jpg" ></a></div>
-            <div class="item"><a href="project.html"><img src="image\img-7.jpeg" ></a></div>
-            <div class="item"><a href="project.html"><img src="image\img-6.jpg" ></a></div>
-            <div class="item"><a href="project.html"><img src="image\img-3.jpeg" ></a></div>
-            <div class="item"><a href="project.html"><img src="image\img-8.jpg"></a></div>
-            <div class="item"><a href="project.html"><img src="image\product-4.jpg" ></a></div>
-            <div class="item"><a href="project.html"><img src="image\electronic-9.jpeg" ></a></div>
-            <div class="item"><a href="project.html"><img src="image\towels.jpeg" ></a></div>
-            <div class="item"><a href="project.html"><img src="image\wall clock.jpeg" ></a></div>
-            <div class="item"><a href="project.html"><img src="image\product-8.jpg" ></a></div>
-        </div>
-</div>
-
-</div>
-</div>
   <br>
   <br>
 <!--Deals-->
