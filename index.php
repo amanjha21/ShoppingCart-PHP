@@ -131,8 +131,8 @@ if($_SESSION['greet']){
 
 
 
-<div class="products" id="brands1"> <a href="men-section.html" target="_blank"> <img src="image/product-1.jpg" height="300px" width="auto"></a>
-    <a href="men-section.html" target="_blank"><h4>Red printed T-shirt</h4></a>
+<div class="products" id="brands1"> <a href="men.php" target="_blank"> <img src="image/product-1.jpg" height="300px" width="auto"></a>
+    <a href="men.php" target="_blank"><h4>Red printed T-shirt</h4></a>
 <p>Rs.699</p>
 <div class="rating">
     <i class="fa fa-star" aria-hidden="true"></i>
@@ -143,9 +143,9 @@ if($_SESSION['greet']){
 </div>
 
 </div>
-<div class="products" id="brands2"> <a href="men-section.html" target="_blank"> <img src="image/product-2.jpg" height="300px" width="auto"></a>
+<div class="products" id="brands2"> <a href="men.php" target="_blank"> <img src="image/product-2.jpg" height="300px" width="auto"></a>
 
-    <a target="_blank" href="men-section.html"><h4>Gold-Star Shoes</h4></a>
+    <a target="_blank" href="men.php"><h4>Gold-Star Shoes</h4></a>
     
     <p>Rs.1699</p>
     <div class="rating">
@@ -158,9 +158,9 @@ if($_SESSION['greet']){
     
 
 </div>
-<div class="products" id="brands3"> <a href="men-section.html" target="_blank"><img src="image/product-3.jpg" height="300px" width="auto"></a>
+<div class="products" id="brands3"> <a href="men.php" target="_blank"><img src="image/product-3.jpg" height="300px" width="auto"></a>
 
-    <a href="men-section.html" target="_blank"> <h4>Roadster Track Pant</h4></a>
+    <a href="men.php" target="_blank"> <h4>Roadster Track Pant</h4></a>
     <p>Rs.969</p>
     <div class="rating">
         <i class="fa fa-star" aria-hidden="true"></i>
@@ -172,9 +172,9 @@ if($_SESSION['greet']){
     </div>
 
 </div>
-<div class="products" id="brands4"> <a href="men-section.html" target="_blank"><img src="image/product-8.jpg" height="300px" width="auto"></a>
+<div class="products" id="brands4"> <a href="men.php" target="_blank"><img src="image/product-8.jpg" height="300px" width="auto"></a>
 
-    <a href="men-section.html" target="_blank"><h4>Fastrack Wrist Watch</h4></a>
+    <a href="men.php" target="_blank"><h4>Fastrack Wrist Watch</h4></a>
     <p>Rs.3699</p>
     <div class="rating">
         <i class="fa fa-star" aria-hidden="true"></i>
@@ -185,9 +185,9 @@ if($_SESSION['greet']){
     </div>
 
 </div>
-<div class="products" id="brands5"> <a href="men-section.html" target="_blank"><img src="image/product-7.jpg" height="300px" width="auto"></a>
+<div class="products" id="brands5"> <a href="men.php" target="_blank"><img src="image/product-7.jpg" height="300px" width="auto"></a>
 
-    <a href="men-section.html" target="_blank"><h4>HR-X Socks</h4></a>
+    <a href="men.php" target="_blank"><h4>HR-X Socks</h4></a>
     <p>Rs.199</p>
     <div class="rating">
         <i class="fa fa-star" aria-hidden="true"></i>
@@ -198,9 +198,9 @@ if($_SESSION['greet']){
     </div>
 
 </div>
-<div class="products" id="brands6"> <a href="men-section.html" target="_blank"><img src="image/product-6.jpg" height="300px" width="auto"></a>
+<div class="products" id="brands6"> <a href="men.php" target="_blank"><img src="image/product-6.jpg" height="300px" width="auto"></a>
 
-    <a href="men-section.html" target="_blank"><h4>Black printed T-shirt</h4></a>
+    <a href="men.php" target="_blank"><h4>Black printed T-shirt</h4></a>
     <p>Rs.999</p>
     <div class="rating">
         <i class="fa fa-star" aria-hidden="true"></i>
@@ -254,8 +254,8 @@ if($_SESSION['greet']){
         
         
         
-        <div class="products" id="brands1"> <a href="women-section.html" target="_blank">   <img src="image/women-1.jpg" height="300px" width="auto"></a>
-            <a href="women-section.html" target="_blank"> <h4>No-Heels-Sandals</h4></a>
+        <div class="products" id="brands1"> <a href="women.php" target="_blank">   <img src="image/women-1.jpg" height="300px" width="auto"></a>
+            <a href="women.php" target="_blank"> <h4>No-Heels-Sandals</h4></a>
         <p>Rs.1599</p>
         <div class="rating">
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -266,9 +266,9 @@ if($_SESSION['greet']){
         </div>
         
         </div>
-        <div class="products" id="brands2"> <a href="women-section.html" target="_blank"> <img src="image/women-2.png" height="300px" width="230px"></a>
+        <div class="products" id="brands2"> <a href="women.php" target="_blank"> <img src="image/women-2.png" height="300px" width="230px"></a>
         
-            <a href="women-section.html" target="_blank"> <h4>Pashmina Scarf</h4></a>
+            <a href="women.php" target="_blank"> <h4>Pashmina Scarf</h4></a>
             <p>Rs.299</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -279,9 +279,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands3"> <a href="women-section.html" target="_blank"> <img src="image/women-3.Jpeg" height="300px" width="230px"></a>
+        <div class="products" id="brands3"> <a href="women.php" target="_blank"> <img src="image/women-3.Jpeg" height="300px" width="230px"></a>
         
-            <a href="women-section.html" target="_blank"> <h4>Rebals Tales Bag</h4></a>
+            <a href="women.php" target="_blank"> <h4>Rebals Tales Bag</h4></a>
             <p>Rs.1969</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -293,9 +293,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <a href="women-section.html" target="_blank"> <div class="products" id="brands4"> <img src="image/women-4.jpeg" height="300px" width="230px"></a>
+        <a href="women.php" target="_blank"> <div class="products" id="brands4"> <img src="image/women-4.jpeg" height="300px" width="230px"></a>
         
-            <a href="women-section.html" target="_blank"> <h4>Pink shirt for women</h4></a>
+            <a href="women.php" target="_blank"> <h4>Pink shirt for women</h4></a>
             <p>Rs.999</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -306,9 +306,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands5"> <a href="women-section.html" target="_blank"> <img src="image/women-5.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands5"> <a href="women.php" target="_blank"> <img src="image/women-5.jpg" height="300px" width="230px"></a>
         
-            <a href="women-section.html" target="_blank"> <h4>Pull-Over Sweater</h4></a>
+            <a href="women.php" target="_blank"> <h4>Pull-Over Sweater</h4></a>
             <p>Rs.499</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -319,9 +319,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands6"> <a href="women-section.html" target="_blank"> <img src="image/women-6.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands6"> <a href="women.php" target="_blank"> <img src="image/women-6.jpg" height="300px" width="230px"></a>
         
-            <a href="women-section.html" target="_blank"> <h4>Daisy Track Pant</h4></a>
+            <a href="women.php" target="_blank"> <h4>Daisy Track Pant</h4></a>
             <p>Rs.999</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -371,8 +371,8 @@ if($_SESSION['greet']){
         
         
         
-        <div class="products" id="brands1"> <a href="men-section.html" target="_blank"> <img src="image/men-1.jpg" height="300px" width="230"></a>
-            <a href="men-section.html" target="_blank"><h4>Men's Formal Shirt</h4></a>
+        <div class="products" id="brands1"> <a href="men.php" target="_blank"> <img src="image/men-1.jpg" height="300px" width="230"></a>
+            <a href="men.php" target="_blank"><h4>Men's Formal Shirt</h4></a>
         <p>Rs.1699</p>
         <div class="rating">
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -383,9 +383,9 @@ if($_SESSION['greet']){
         </div>
         
         </div>
-        <div class="products" id="brands2">  <a href="men-section.html" target="_blank"><img src="image/men-2.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands2">  <a href="men.php" target="_blank"><img src="image/men-2.jpg" height="300px" width="230px"></a>
         
-            <a href="men-section.html" target="_blank"><h4>Philips Trimmer</h4></a>
+            <a href="men.php" target="_blank"><h4>Philips Trimmer</h4></a>
             <p>Rs.1459</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -396,9 +396,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands3">  <a href="men-section.html" target="_blank"><img src="image/men-3.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands3">  <a href="men.php" target="_blank"><img src="image/men-3.jpg" height="300px" width="230px"></a>
         
-            <a href="men-section.html" target="_blank"><h4>Fogg Perfume</h4></a>
+            <a href="men.php" target="_blank"><h4>Fogg Perfume</h4></a>
             <p>Rs.1269</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -410,9 +410,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands4">  <a href="men-section.html" target="_blank"><img src="image/men-4.jpeg" height="300px" width="230px"></a>
+        <div class="products" id="brands4">  <a href="men.php" target="_blank"><img src="image/men-4.jpeg" height="300px" width="230px"></a>
         
-            <a href="men-section.html" target="_blank"><h4>Sleeveless Vest</h4></a>
+            <a href="men.php" target="_blank"><h4>Sleeveless Vest</h4></a>
             <p>Rs.299</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -423,9 +423,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands5"> <a href="men-section.html" target="_blank"> <img src="image/men-5.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands5"> <a href="men.php" target="_blank"> <img src="image/men-5.jpg" height="300px" width="230px"></a>
         
-            <a href="men-section.html" target="_blank"><h4>Rakuten Jersey</h4></a>
+            <a href="men.php" target="_blank"><h4>Rakuten Jersey</h4></a>
             <p>Rs.1999</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -436,9 +436,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands6">  <a href="men-section.html" target="_blank"><img src="image/men-6.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands6">  <a href="men.php" target="_blank"><img src="image/men-6.jpg" height="300px" width="230px"></a>
         
-            <a href="men-section.html" target="_blank"> <h4>Wallet and Belt Combo</h4></a>
+            <a href="men.php" target="_blank"> <h4>Wallet and Belt Combo</h4></a>
             <p>Rs.1299</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -489,8 +489,8 @@ if($_SESSION['greet']){
         
         
         
-        <div class="products" id="brands1"><a href="kids-section.html" target="_blank"> <img src="image/kids-1.jpg" height="300px" width="230"></a>
-            <a href="kids-section.html" target="_blank"> <h4>Minnie Mouse</h4></a>
+        <div class="products" id="brands1"><a href="kids.php" target="_blank"> <img src="image/kids-1.jpg" height="300px" width="230"></a>
+            <a href="kids.php" target="_blank"> <h4>Minnie Mouse</h4></a>
         <p>Rs.1099</p>
         <div class="rating">
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -501,9 +501,9 @@ if($_SESSION['greet']){
         </div>
         
         </div>
-        <div class="products" id="brands2"> <a href="kids-section.html" target="_blank"><img src="image/kids-2.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands2"> <a href="kids.php" target="_blank"><img src="image/kids-2.jpg" height="300px" width="230px"></a>
         
-            <a href="kids-section.html" target="_blank"> <h4>Multi-Guitar</h4></a>
+            <a href="kids.php" target="_blank"> <h4>Multi-Guitar</h4></a>
             <p>Rs.999</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -514,9 +514,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands3"><a href="kids-section.html" target="_blank">  <img src="image/kids-3.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands3"><a href="kids.php" target="_blank">  <img src="image/kids-3.jpg" height="300px" width="230px"></a>
         
-            <a href="kids-section.html" target="_blank"> <h4>Disney-Blue-Pillow</h4></a>
+            <a href="kids.php" target="_blank"> <h4>Disney-Blue-Pillow</h4></a>
             <p>Rs.259</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -528,9 +528,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands4"><a href="kids-section.html" target="_blank">  <img src="image/kids-4.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands4"><a href="kids.php" target="_blank">  <img src="image/kids-4.jpg" height="300px" width="230px"></a>
         
-            <a href="kids-section.html" target="_blank"> <h4>Twin-Face Bag</h4></a>
+            <a href="kids.php" target="_blank"> <h4>Twin-Face Bag</h4></a>
             <p>Rs.2599</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -541,9 +541,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands5"> <a href="kids-section.html" target="_blank"> <img src="image/kids-5.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands5"> <a href="kids.php" target="_blank"> <img src="image/kids-5.jpg" height="300px" width="230px"></a>
         
-            <a href="kids-section.html" target="_blank"> <h4>Kitty Pink Shoes</h4></a>
+            <a href="kids.php" target="_blank"> <h4>Kitty Pink Shoes</h4></a>
             <p>Rs.999</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -554,9 +554,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands6"> <a href="kids-section.html" target="_blank"> <img src="image/kids-6.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands6"> <a href="kids.php" target="_blank"> <img src="image/kids-6.jpg" height="300px" width="230px"></a>
         
-            <a href="kids-section.html" target="_blank"><h4>Adorable-Blue-Frock</h4></a>
+            <a href="kids.php" target="_blank"><h4>Adorable-Blue-Frock</h4></a>
             <p>Rs.3299</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -607,8 +607,8 @@ if($_SESSION['greet']){
         
         
         
-        <div class="products" id="brands1"><a href="electronics and other items.html" target="_blank"> <img src="image/lockdown-1.jpg" height="300px" width="230"></a>
-            <a href="electronics and other items.html" target="_blank"><h4>Wild-Craft Mask</h4></a>
+        <div class="products" id="brands1"><a href="other.php" target="_blank"> <img src="image/lockdown-1.jpg" height="300px" width="230"></a>
+            <a href="other.php" target="_blank"><h4>Wild-Craft Mask</h4></a>
         <p>Rs.199</p>
         <div class="rating">
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -619,9 +619,9 @@ if($_SESSION['greet']){
         </div>
         
         </div>
-        <div class="products" id="brands2"> <a href="electronics and other items.html" target="_blank"><img src="image/lockdown-3.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands2"> <a href="other.php" target="_blank"><img src="image/lockdown-3.jpg" height="300px" width="230px"></a>
         
-            <a href="electronics and other items.html" target="_blank"><h4>Face-Shield</h4></a>
+            <a href="other.php" target="_blank"><h4>Face-Shield</h4></a>
             <p>Rs.59</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -632,9 +632,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands3"><a href="electronics and other items.html" target="_blank"> <img src="image/lockdown-4.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands3"><a href="other.php" target="_blank"> <img src="image/lockdown-4.jpg" height="300px" width="230px"></a>
         
-            <a href="electronics and other items.html" target="_blank"><h4>Hand Sanitizer</h4></a>
+            <a href="other.php" target="_blank"><h4>Hand Sanitizer</h4></a>
             <p>Rs.99</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -646,9 +646,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands4"><a href="electronics and other items.html" target="_blank"><img src="image/lockdown-2.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands4"><a href="other.php" target="_blank"><img src="image/lockdown-2.jpg" height="300px" width="230px"></a>
         
-            <a href="electronics and other items.html" target="_blank"><h4>3-Mask-Combo</h4></a>
+            <a href="other.php" target="_blank"><h4>3-Mask-Combo</h4></a>
             <p>Rs.499</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -659,9 +659,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands5"> <a href="electronics and other items.html" target="_blank"><img src="image/lockdown-5.jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands5"> <a href="other.php" target="_blank"><img src="image/lockdown-5.jpg" height="300px" width="230px"></a>
         
-            <a href="electronics and other items.html" target="_blank"><h4>PPE Full Kit</h4></a>
+            <a href="other.php" target="_blank"><h4>PPE Full Kit</h4></a>
             <p>Rs.599</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -672,9 +672,9 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands6"> <a href="electronics and other items.html" target="_blank"><img src="image/lockdown-6..jpg" height="300px" width="230px"></a>
+        <div class="products" id="brands6"> <a href="other.php" target="_blank"><img src="image/lockdown-6..jpg" height="300px" width="230px"></a>
         
-            <a href="electronics and other items.html" target="_blank"><h4>Immunity-Boster</h4></a>
+            <a href="other.php" target="_blank"><h4>Immunity-Boster</h4></a>
             <p>Rs.899</p>
             <div class="rating">
                 <i class="fa fa-star" aria-hidden="true"></i>
