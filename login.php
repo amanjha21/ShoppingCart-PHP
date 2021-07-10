@@ -9,8 +9,6 @@ $database = new CreateDb("b1ztlbmzquybazmc1q7l", "Producttb");
 $_SESSION['logged in'] = false;
 //check if request has username and password
 if (isset($_POST['username']) && isset($_POST['password']) && !isset($_POST['email'])){
-
-    // echo'<script>alert("yes")</script>';
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -21,7 +19,6 @@ if (isset($_POST['username']) && isset($_POST['password']) && !isset($_POST['ema
         $_SESSION['greet']=true;
         header("Location: index.php");
         exit();
-            // echo(mysqli_num_rows($result));
         }
         else{
             $_SESSION['message']="Invalid Credentials.";
@@ -32,7 +29,6 @@ if (isset($_POST['username']) && isset($_POST['password']) && !isset($_POST['ema
     $email = $_POST['email'];
     $sql = "INSERT INTO usertb(`username`, `password`, `email`) VALUES ('$username','$password','$email')";
     $result = mysqli_query($database->con, $sql);
-    // echo($result);
      if(!$result){
          echo'<center><h1>error registering</h1></center';
      }else{
@@ -48,15 +44,14 @@ if (isset($_POST['username']) && isset($_POST['password']) && !isset($_POST['ema
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Store</title>
+        <title>Shopee</title>
      
         <!-- CSS only -->
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="css/login.css">
-        <!-- <link rel="stylesheet" href="css/header.css"> -->
+        <link rel="icon" href="image/logo-white.png" type="image" sizes="18x18">
     </head>
 
     <body>

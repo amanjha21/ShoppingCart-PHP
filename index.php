@@ -54,7 +54,7 @@ if($_SESSION['greet']){
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Store</title>
+        <title>Shopee</title>
      
         <!-- CSS only -->
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
@@ -63,10 +63,8 @@ if($_SESSION['greet']){
         <link rel="stylesheet" href="css/owl.theme.green.css">
        
         <link rel="stylesheet" href="css/project.css">
-
-
-
-        <script src="js/jquery.min.js"></script>
+        <link rel="icon" href="image/logo-white.png" type="image" sizes="18x18">
+         <script src="js/jquery.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
     
     </head>

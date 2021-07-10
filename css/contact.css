@@ -73,6 +73,6 @@ label {
 tr td:first-child {
   padding-right: 20px;
 }
-tr td:first-child {
-  padding-top: 40px;
+tr:last-child td:last-child {
+  padding-top: 80px;
 }
