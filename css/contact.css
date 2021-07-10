@@ -1,7 +1,10 @@
+.container {
+  width: 100vw;
+  overflow: hidden;
+}
 .contact-box {
   background: #045491;
   display: flex;
-  font-size: 26px;
 }
 .contact-left {
   flex-basis: 60%;
