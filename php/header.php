@@ -8,7 +8,7 @@
   href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css"
 />
 
-<link rel="stylesheet" href="css/header2.css" />
+<link rel="stylesheet" href="css/header.css" />
 <script>
 function logout(){
     document.cookie = "PHPSESSID = 0;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
@@ -68,7 +68,7 @@ document.getElementById('alert-message').classList.add("hide-alert");
             </div>
           </div>
         </li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.php">Contact</a></li>
         <li><a href="cart.php">Cart
         <?php
 
@@ -113,6 +113,12 @@ if (isset($_SESSION['cart'])){
   </div>
   <!--/.container -->
 </div>
+<?php
+  if (isset($_SESSION['message'])){
+    echo "<script>showAlert('$_SESSION[message]');</script>";
+    unset($_SESSION['message']);
+  }
+?>
 
 <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
 

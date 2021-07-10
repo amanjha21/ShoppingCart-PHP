@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
     <?php require_once ("php/header.php"); ?>
     <div class="container">
-        <h1>Connect With Us</h1>
+        <h1 class="center-text"><b>Connect With Us</b></h1>
         <br>
         <br>
-        <p>We would love to respond to your queries and help <br>you succed. Feel free to get in touch with us.</p>
+        <p class="center-text">We would love to respond to your queries and help <br>you succed. Feel free to get in touch with us.</p>
 
         <div class="contact-box">
             <div class="contact-left">
@@ -59,17 +63,17 @@
                     <tr>
                         
                         <td>Email-id</td>
-                        <td>contactus@mykart.com</td>
+                        <td>contactus@shopee.com</td>
                     
                     </tr>
                     <tr>
                         <td>Phone</td>
-                        <td>+91 8459434694</td>
+                        <td>+91 1234567899</td>
                     </tr>
                     <tr>
                         <td>Address</td>
                         <td>594, Ground floor, Ville parle <br>
-                        Adarsh road, Mumbai 431001
+                        Adarsh road, Nepal 
                     </td>
                     </tr>
                     
@@ -78,5 +82,6 @@
             </div>
         </div>
     </div>
+    <?php require_once ("php/footer.php"); ?>
 </body>
 </html>

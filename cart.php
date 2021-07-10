@@ -12,8 +12,9 @@ if (isset($_POST['remove'])){
       foreach ($_SESSION['cart'] as $key => $value){
           if($value["product_id"] == $_GET['id']){
               unset($_SESSION['cart'][$key]);
-              echo "<script>alert('Product has been Removed...!');</script>";
-              echo "<script>window.location = 'cart.php'</script>";
+              $_SESSION['message']="Product removed!";
+            //   echo "<script>alert('$_SESSION[message]');</script>";
+            //   echo "<script>window.location = 'cart.php'</script>";
           }
       }
   }
@@ -46,7 +47,7 @@ if (isset($_POST['remove'])){
     require_once ('php/header.php');
     ?>
 
-<div class="container-fluid">
+<div class="container-fluid cart-container">
     <div class="row px-5">
         <div class="col-md-7">
             <div class="shopping-cart">

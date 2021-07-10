@@ -15,8 +15,7 @@ if (isset($_POST['add'])){
         $item_array_id = array_column($_SESSION['cart'], "product_id");
 
         if(in_array($_POST['product_id'], $item_array_id)){
-            echo "<script>alert('Product is already added in the cart..!')</script>";
-            echo "<script>window.location = 'index.php'</script>";
+            $_SESSION['message']="Product is already added in the cart..!";
         }else{
 
             $count = count($_SESSION['cart'])+1;
@@ -25,6 +24,7 @@ if (isset($_POST['add'])){
             );
 
             $_SESSION['cart'][$count] = $item_array;
+            $_SESSION['message']="Product added.";
         }
 
     }else{
@@ -35,12 +35,13 @@ if (isset($_POST['add'])){
 
         // Create new session variable
         $_SESSION['cart'][0] = $item_array;
+        $_SESSION['message']="Product added";
         //  print_r($_SESSION['cart']);
     }
 }
 if(isset($_SESSION['greet'])){
 if($_SESSION['greet']){
-    echo'<script>alert("Logged in Successfully.")</script>';
+    $_SESSION['message']="Logged in Successfully.";
     $_SESSION['greet']=false;
 }
 }

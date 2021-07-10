@@ -1,20 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: #5bbdeb;
-  font-size: 28px;
-  margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.container {
-  width: 80%;
-  margin: 100px;
-  font-family: cursive;
-}
 .contact-box {
   background: #045491;
   display: flex;
@@ -24,6 +7,9 @@ body {
   flex-basis: 60%;
   padding: 40px 60px;
   color: black;
+}
+.container .center-text {
+  text-align: center;
 }
 .contact-right {
   flex-basis: 40%;
