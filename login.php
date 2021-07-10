@@ -24,7 +24,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && !isset($_POST['ema
             // echo(mysqli_num_rows($result));
         }
         else{
-            echo'<script>alert("Invalid Credentials.")</script>';
+            $_SESSION['message']="Invalid Credentials.";
         }
 }else if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['email'])){
     $username = $_POST['username'];
@@ -36,7 +36,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && !isset($_POST['ema
      if(!$result){
          echo'<center><h1>error registering</h1></center';
      }else{
-        echo'<script>alert("Registered Successfully.")</script>';
+        $_SESSION['message']="Registered Successfully.";
      }
 
 
