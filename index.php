@@ -171,19 +171,7 @@ if($_SESSION['greet']){
     </div>
 
 </div>
-<div class="products" id="brands6"> <a href="men.php" target="_blank"><img src="image/product-6.jpg" height="300px" width="auto"></a>
 
-    <a href="men.php" target="_blank"><h4>Black printed T-shirt</h4></a>
-    <p>Rs.999</p>
-    <div class="rating">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-    </div>
-
-</div>
 
 </div>
 </div>
@@ -292,19 +280,6 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands6"> <a href="women.php" target="_blank"> <img src="image/women-6.jpg" height="300px" width="230px"></a>
-        
-            <a href="women.php" target="_blank"> <h4>Daisy Track Pant</h4></a>
-            <p>Rs.999</p>
-            <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            </div>
-        
-        </div>
         
         </div>
         </div>
@@ -406,19 +381,6 @@ if($_SESSION['greet']){
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
-            </div>
-        
-        </div>
-        <div class="products" id="brands6">  <a href="men.php" target="_blank"><img src="image/men-6.jpg" height="300px" width="230px"></a>
-        
-            <a href="men.php" target="_blank"> <h4>Wallet and Belt Combo</h4></a>
-            <p>Rs.1299</p>
-            <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
             </div>
         
         </div>
@@ -527,19 +489,6 @@ if($_SESSION['greet']){
             </div>
         
         </div>
-        <div class="products" id="brands6"> <a href="kids.php" target="_blank"> <img src="image/kids-6.jpg" height="300px" width="230px"></a>
-        
-            <a href="kids.php" target="_blank"><h4>Adorable-Blue-Frock</h4></a>
-            <p>Rs.3299</p>
-            <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-            </div>
-        
-        </div>
         
         </div>
         </div>
@@ -642,19 +591,6 @@ if($_SESSION['greet']){
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
-            </div>
-        
-        </div>
-        <div class="products" id="brands6"> <a href="other.php" target="_blank"><img src="image/lockdown-6..jpg" height="300px" width="230px"></a>
-        
-            <a href="other.php" target="_blank"><h4>Immunity-Boster</h4></a>
-            <p>Rs.899</p>
-            <div class="rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
             </div>
         
         </div>
